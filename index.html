@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AFC club</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+
+	<header id="navbar">
+		<nav>
+			<ul>
+				<a href=""><li class="navlink">Home</li></a>
+				<a href=""><li class="navlink">About Us</li></a>
+				<a href=""><li class="navlink">Club Events</li></a>
+				<a href=""><li class="navlink">Gallery</li></a>
+				<a href=""><li class="navlink">Projects</li></a>
+				<a href=""><li class="navlink">Team</li></a>
+				<a href=""><li class="navlink">Downloads</li></a>
+				<a href=""><li class="navlink">Contact</li></a>
+			</ul>	
+		</nav>
+	</header>
+	
+
+	<main>
+		<section id="page1">
+			<div class="home-content">
+				<h1>Automotive &<br> Fabrication Club</h1>
+				 <button id="know-more" class="btn">KNOW MORE</button>
+
+			</div>
+			<div class="panel">
+				<div class="about-us">
+					<h1>About Us</h1>
+					<p>The Automotive and Fabrication Club. As the name itself suggests the clubs invokes learning in students by incorporating two major topics which form the building blocks of all the engineering sciences. Here at AFC we believe in "Creating to Learn, Learning to Create" and try to build out of the very basic laws provided by the nature. Constituting of a huge participation from all the years of the UG program we are an ever growing and an ever learning family.</p>
+				</div>
+			</div>
+			<!-- Initial animation of first page-->
+			<script>		
+							const know_more = document.getElementById("know-more");
+							know_more.addEventListener('click',function(){
+							TweenMax.to('.panel',1.5,{scaleY:1,ease: Power3.easeOut});
+							TweenMax.to('.about-us',1,{opacity:1,delay:1});
+							TweenMax.to('#navbar',1,{opacity:1,delay:1,top:0,ease: Back.easeOut.config(1.7)});
+
+						});					
+			</script>
+		</section>
+
+		<section id="page2">
+			<h1>Club Events</h1>
+			<p>Emphasizing on the most natural ways of learning we have always been looking forward to and working towards churning out solutions to the present days problems by looking up towards the very basic building blocks of science by incorporating hydraulics, simple mechanics, combustion systems etc to construct awe inspiring machines.</p>
+			<div class="cards">
+				<div class="card">
+					<img src="img/7.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam, aliquam repudiandae consequatur doloribus harum quae, quasi ipsam incidunt labore quis mollitia fuga itaque officia ab, assumenda facilis deserunt praesentium.
+					</p>
+		
+				</div>
+				<div class="card">
+					<img src="img/8.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam, aliquam repudiandae consequatur doloribus harum quae, quasi ipsam incidunt labore quis mollitia fuga itaque officia ab, assumenda facilis deserunt praesentium.
+					</p>	
+					
+				</div>
+				<div class="card">
+					<img src="img/9.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam, aliquam repudiandae consequatur doloribus harum quae, quasi ipsam incidunt labore quis mollitia fuga itaque officia ab, assumenda facilis deserunt praesentium.
+					</p>
+						
+				</div>
+				
+			</div>
+		</section>
+		<section id="page3">
+			<h1>Projects</h1>
+			<p>Projects for students to take up real life machines and combine electronics, robotics and mechanical systems to bring their ideas to life</p>
+			<div class="vt-cards">
+				<div class="vt-card">
+					<div class="hover-content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam, aliquam repudiandae consequatur doloribus harum quae, quasi ipsam incidunt labore quis mollitia fuga itaque officia ab, assumenda facilis deserunt praesentium.
+						</p>
+					</div>
+				</div>
+				<div class="vt-card">
+					<div class="hover-content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam, aliquam repudiandae consequatur doloribus harum quae, quasi ipsam incidunt labore quis mollitia fuga itaque officia ab, assumenda facilis deserunt praesentium.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="page4">
+			<h1>Gallery</h1>
+			<div class="imgboard">
+				<div class="image"></div>
+				<div class="image"></div>
+				<div class="image"></div>
+				<div class="image"></div>				
+			</div>
+		</section>
+
+		<section id="page5">
+			<h1>Team</h1>
+			<div class="teamboard">
+				<div class="vt-card profile">
+					<img src="img/team0.jpg">
+					<div class="caption">
+						<h2>Dr. Pavan Kumar Kankar</h2>
+						<p>Faculty Advisor</p>
+						<i class="far fa-envelope"></i>
+					</div>
+					
+				</div>
+				<div class="vt-card profile">
+					<img src="img/team3.jpg">
+					<div class="caption">
+						<h2>Durgesh Pandey</h2>
+						<p>Cordinator</p>
+						<i class="far fa-envelope"></i>
+					</div>
+				</div>
+				<div class="vt-card profile">
+					<img src="img/team1.jpg">
+					<div class="caption">
+						<h2>Durganshu Mishra</h2>
+						<p>Co-cordinator</p>
+						<i class="far fa-envelope"></i>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+					
+	</main>
+	
+</body>
+</html>

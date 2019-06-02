@@ -1,0 +1,285 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ropa Sans', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*Nav bar */
+#navbar{
+	width: 100vw;
+	height: 80px;
+	box-shadow: 0 2px 2px 1px lightgrey;
+	position: fixed;
+	top: -20%;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	background-color: rgba(255,255,255,0.9);
+}
+#navbar nav ul{
+	display: flex;
+	height:80px;
+	justify-content: center;
+	align-items:center;
+}
+#navbar nav ul a{
+	margin:0 15px;
+}
+#navbar nav ul a li{
+	list-style: none;
+}
+
+
+
+
+#page1{
+	position: relative;
+	height: 100vh;
+}
+
+.home-content{
+	position: absolute;
+	top: 25%;
+	left: 0;
+	margin-left:30px;
+	height: auto;
+}
+.home-content h1{
+	font-family: Ropa Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	line-height: 80px;
+	letter-spacing: 0.04em;
+}
+.btn{
+	
+	font-size: 20px;
+	margin-top: 10px;
+	padding: 10px;
+	width: 150px;
+	background-color:#41EAAD;
+	text-align: center;
+	box-shadow: 0 1px 2px 0 grey;
+	color: white;
+	outline: none;
+	border:none;
+}
+
+.panel{
+	position: absolute;
+	right: 0;
+	bottom:0;
+	max-width:calc(100vw - 60%);
+	height:100%;
+	background-color:#8DE6C6;
+	transform: scaleY(0);
+	transform-origin: bottom;
+
+}
+
+.about-us{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 100px;
+	text-align: justify;
+	opacity: 0;
+
+}
+.about-us h1{
+	font-size: 35px;
+	padding-bottom: 15px;
+}
+
+.about-us p{
+	font-size: 20px;
+	line-height: 1.5;
+	padding-top: 20px;
+	border-top: 3px solid white;
+	color:rgba(0,0,0,0.8);
+}
+
+
+#page2{
+	min-height: 210vh;
+	position: relative;
+	overflow-x: hidden;
+	text-align: center;
+	padding: 150px;
+}
+#page2::before{
+	content: '';
+    position: absolute;
+    top:10%;
+	left: 0;
+	height: 600px;
+	width: 100%;
+	background-color: #8DE6C6;
+	transform: skewY(25deg);
+	transform-origin: top left;
+	z-index: -1;
+}
+#page2 h1,#page3 h1,#page4 h1,#page5 h1{
+	font-size: 35px;
+	padding-top:80px;
+	padding-bottom: 30px;
+}
+
+#page2 p,#page3 p{
+	margin-top:20px;
+	font-size: 20px;
+	line-height: 1.5;
+	
+}
+
+
+.cards{
+	display: grid;
+	grid-row-gap: 40px;
+	padding-top: 50px;
+	text-align: justify;
+}
+.card{
+	width: 100%;
+	min-height: 300px;
+	box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.5);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.card p{
+	padding:30px;
+}
+.card img{
+	height: 300px;
+	width: 100%;
+}
+#page3{
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	text-align: center;
+	padding: 0 150px;
+}
+#page3::before{
+	content: '';
+    position: absolute;
+    top:2300px;
+	left: 0;
+	height: 600px;
+	width: 100%;
+	background-color: #8DE6C6;
+	transform: skewY(-25deg);
+	transform-origin: top right;
+	z-index: -1;
+}
+.vt-cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	place-items:center;
+	padding-top: 100px;
+}
+
+.vt-card{
+	height: 350px;
+	width:300px;
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+	position: relative;
+	text-align: center;
+}
+.hover-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	text-align: justify;
+	background-color: rgba(65,234,173,0.5);
+	transform-origin: left;
+	transform: translateX(0);
+	opacity: 0;
+	transition: all 1.5s  ease;
+	font-size: 20px;
+}
+
+.vt-card:hover .hover-content{
+	opacity: 0.7;
+	transform: translateX(1);
+}
+
+#page4{
+	padding-top: 100px;
+	text-align: center;
+	height: auto;
+	padding-left: 150px;
+	padding-right: 150px;
+	position: relative;
+	z-index: 2; 
+}
+
+.imgboard{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap:5px;
+	padding-:0 50px;
+}
+.image{
+	width: 350px;
+	height: 350px;
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#page5{
+	text-align: center; 
+	height: 100vh;
+}
+
+.teamboard{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	margin-top: 50px;
+	place-items:center;
+}
+
+.vt-card img{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	left: 25%;
+	top: -10%;
+	border:3px solid white;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.caption{
+	position: absolute;
+	top: 40%;
+	left: 0	;
+	width: 100%;
+	text-align: center;
+	
+}
+.caption h2{
+ 	margin: 20px;
+}
+.profile{
+	transition: all 0.7s ease;
+}
+.profile:hover {
+	background-color: rgba(65,234,173,0.4);
+}
+.far{
+	font-size: 40px;
+	padding-top: 20px;
+}
