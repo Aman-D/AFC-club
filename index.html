@@ -84,20 +84,89 @@
 			<p>Projects for students to take up real life machines and combine electronics, robotics and mechanical systems to bring their ideas to life</p>
 			<div class="vt-cards">
 				<div class="vt-card">
-					<div class="hover-content">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam, aliquam repudiandae consequatur doloribus harum quae, quasi ipsam incidunt labore quis mollitia fuga itaque officia ab, assumenda facilis deserunt praesentium.
-						</p>
-					</div>
+					<img src="img/dummy.png">
+					<button class="btn crd-btn modal-open" data-modal="modal1">Explore</button>
 				</div>
 				<div class="vt-card">
-					<div class="hover-content">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam, aliquam repudiandae consequatur doloribus harum quae, quasi ipsam incidunt labore quis mollitia fuga itaque officia ab, assumenda facilis deserunt praesentium.
-						</p>
-					</div>
+					<img src="img/dummy.png">
+					<button class="btn crd-btn modal-open" data-modal="modal2">Explore</button>
 				</div>
 			</div>
+
+
+			<!-- Modals for Projects-->
+
+			<div class="modal" id="modal1">
+
+				<svg class="close"width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1L41 41" stroke="black"/>
+					<path d="M41.1191 1.11987L0.880849 40.8802" stroke="black"/>
+				</svg>
+				
+				<div class="modal-content">
+					<div class="modal-header">Head 1</div>
+					<div class="modal-para">
+						<p>
+							Do not go by its size. This miniature version of a super car is brutally powerful and obscenely flamboyant and is unburdened by reality. Unflappably stable and crazy fast, it’s capable of amazing performance without feeling like it’s going to snap-spin into a ditch, which is refreshing in any machine which incorporates an IC Engine. With the looks of a naked roadster, it has a 3.48 cc nitro engine and a torque of 6.48 kg-cm and 2.4 GHz, 3 Channel radio control system for steering throttling and breaking. For the ultimate, the throttle car is a beast born and bred in the arenas of IIITDMJ and claims a top speed of 40 mph in our testing
+						</p>
+						<ul>
+							<li>Engine: 3.48 cc</li>
+							<li>Chassis Metal: Mild Steel Plate.</li>
+							<li>Wheelbase: 322mm (12.7 in)</li>
+							<li>Control System: 2.4 GHz 3 Channel Radio Control System</li>
+							<li>Suspension: C-Hub Suspension</li>
+						</ul>
+					</div>
+					
+				</div>
+
+			</div>
+			<div class="modal" id="modal2">
+
+				<svg class="close"width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1 1L41 41" stroke="black"/>
+					<path d="M41.1191 1.11987L0.880849 40.8802" stroke="black"/>
+				</svg>
+				
+				<div class="modal-content">
+					<div class="modal-header">Head 2</div>
+					<div class="modal-para">
+						<p>
+							Do not go by its size. This miniature version of a super car is brutally powerful and obscenely flamboyant and is unburdened by reality. Unflappably stable and crazy fast, it’s capable of amazing performance without feeling like it’s going to snap-spin into a ditch, which is refreshing in any machine which incorporates an IC Engine. With the looks of a naked roadster, it has a 3.48 cc nitro engine and a torque of 6.48 kg-cm and 2.4 GHz, 3 Channel radio control system for steering throttling and breaking. For the ultimate, the throttle car is a beast born and bred in the arenas of IIITDMJ and claims a top speed of 40 mph in our testing
+						</p>
+						<ul>
+							<li>Engine: 3.48 cc</li>
+							<li>Chassis Metal: Mild Steel Plate.</li>
+							<li>Wheelbase: 322mm (12.7 in)</li>
+							<li>Control System: 2.4 GHz 3 Channel Radio Control System</li>
+							<li>Suspension: C-Hub Suspension</li>
+						</ul>
+					</div>
+					
+				</div>
+
+			</div>
+			<script type="text/javascript">
+					const modalbtns = document.querySelectorAll('.modal-open');
+					modalbtns.forEach(function(btn){
+					btn.addEventListener('click',function(){
+					const modal = btn.getAttribute('data-modal');
+						document.getElementById(modal).style.display = 'block';
+						TweenMax.to('.modal',1,{scaleX:1,ease: Power3.easeOut});
+						TweenMax.to('.modal-content',1,{opacity:1,ease: Power1.easeOut,delay:1});
+						TweenMax.to('.close',1,{opacity:1,delay:1.2});
+					});
+				});
+					const closebtns = document.querySelectorAll('.close');
+					closebtns.forEach(function(close){
+						close.addEventListener('click',function(){
+							TweenMax.to('.close',1,{opacity:0});
+							TweenMax.to('.modal-content',1,{opacity:0,ease: Power1.easeOut,delay:0.3});
+							TweenMax.to('.modal',1,{scaleX:0,ease: Power3.easeOut,delay:0.7});	
+							document.getElementById(modal).style.display = 'hidden';
+						});
+					});
+			</script>
 		</section>
 
 		<section id="page4">
