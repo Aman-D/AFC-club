@@ -13,21 +13,21 @@
 	<header id="navbar">
 		<nav>
 			<ul>
-				<a href=""><li class="navlink">Home</li></a>
-				<a href=""><li class="navlink">About Us</li></a>
-				<a href=""><li class="navlink">Club Events</li></a>
-				<a href=""><li class="navlink">Gallery</li></a>
-				<a href=""><li class="navlink">Projects</li></a>
-				<a href=""><li class="navlink">Team</li></a>
-				<a href=""><li class="navlink">Downloads</li></a>
-				<a href=""><li class="navlink">Contact</li></a>
+				<a href="#home"><li class="navlink">Home</li></a>
+				<a href="#home"><li class="navlink">About Us</li></a>
+				<a href="#events"><li class="navlink">Club Events</li></a>
+				<a href="#projects"><li class="navlink">Projects</li></a>
+				<a href="#gallery"><li class="navlink">Gallery</li></a>
+				<a href="#team"><li class="navlink">Team</li></a>
+				<a href="#contact"><li class="navlink">Downloads</li></a>
+				<a href="#contact"><li class="navlink">Contact</li></a>
 			</ul>	
 		</nav>
 	</header>
 	
 
 	<main>
-		<section id="page1">
+		<section id="home">
 			<div class="home-content">
 				<h1>Automotive &<br> Fabrication Club</h1>
 				 <button id="know-more" class="btn">KNOW MORE</button>
@@ -46,12 +46,13 @@
 							TweenMax.to('.panel',1.5,{scaleY:1,ease: Power3.easeOut});
 							TweenMax.to('.about-us',1,{opacity:1,delay:1});
 							TweenMax.to('#navbar',1,{opacity:1,delay:1,top:0,ease: Back.easeOut.config(1.7)});
+							document.body.style.overflowY = 'scroll';
 
 						});					
 			</script>
 		</section>
 
-		<section id="page2">
+		<section id="events">
 			<h1>Club Events</h1>
 			<p>Emphasizing on the most natural ways of learning we have always been looking forward to and working towards churning out solutions to the present days problems by looking up towards the very basic building blocks of science by incorporating hydraulics, simple mechanics, combustion systems etc to construct awe inspiring machines.</p>
 			<div class="cards">
@@ -79,7 +80,7 @@
 				
 			</div>
 		</section>
-		<section id="page3">
+		<section id="projects">
 			<h1>Projects</h1>
 			<p>Projects for students to take up real life machines and combine electronics, robotics and mechanical systems to bring their ideas to life</p>
 			<div class="vt-cards">
@@ -104,7 +105,7 @@
 				</svg>
 				
 				<div class="modal-content">
-					<div class="modal-header">Head 1</div>
+					<div class="modal-header">The Throttle Car</div>
 					<div class="modal-para">
 						<p>
 							Do not go by its size. This miniature version of a super car is brutally powerful and obscenely flamboyant and is unburdened by reality. Unflappably stable and crazy fast, it’s capable of amazing performance without feeling like it’s going to snap-spin into a ditch, which is refreshing in any machine which incorporates an IC Engine. With the looks of a naked roadster, it has a 3.48 cc nitro engine and a torque of 6.48 kg-cm and 2.4 GHz, 3 Channel radio control system for steering throttling and breaking. For the ultimate, the throttle car is a beast born and bred in the arenas of IIITDMJ and claims a top speed of 40 mph in our testing
@@ -129,17 +130,18 @@
 				</svg>
 				
 				<div class="modal-content">
-					<div class="modal-header">Head 2</div>
+					<div class="modal-header">The Glider</div>
 					<div class="modal-para">
 						<p>
-							Do not go by its size. This miniature version of a super car is brutally powerful and obscenely flamboyant and is unburdened by reality. Unflappably stable and crazy fast, it’s capable of amazing performance without feeling like it’s going to snap-spin into a ditch, which is refreshing in any machine which incorporates an IC Engine. With the looks of a naked roadster, it has a 3.48 cc nitro engine and a torque of 6.48 kg-cm and 2.4 GHz, 3 Channel radio control system for steering throttling and breaking. For the ultimate, the throttle car is a beast born and bred in the arenas of IIITDMJ and claims a top speed of 40 mph in our testing
+							"If only man could have wings........ " Though he does not and at present cannot have a set of wings for himself he, on the bright side, has successfully engineered machines which took airborne with speeds that are greater than the sound. In attempt towards working and improvising this achievement of mankind we at the Automotive & Fabrication Club design our own flying machine with the best sources available with a powerful A 2212 1400KV Brushless motor pumping blood at the rate of 1400 rpm to its main propeller, a fluidly aerodynamic depron body 4.8v (1.80 kg-cm)servo motors for manoeuvring and a 1000mAh 3S li-po 11.1 /20c battery for ample power it soars in the air like bird in its natural habitat.
 						</p>
 						<ul>
-							<li>Engine: 3.48 cc</li>
-							<li>Chassis Metal: Mild Steel Plate.</li>
-							<li>Wheelbase: 322mm (12.7 in)</li>
-							<li>Control System: 2.4 GHz 3 Channel Radio Control System</li>
-							<li>Suspension: C-Hub Suspension</li>
+							<li>Total weight: 480gms to 530gms.</li>
+							<li>Wing span: 35 inches</li>
+							<li>Motor Speed: 1400 rpm (Brushless DC)</li>
+							<li>Fuselage length: 26.25 in</li>
+							<li>Controls: 2.4 GHz 6 Channel Radio Control System</li>
+							<li>Body Material: Depron</li>
 						</ul>
 					</div>
 					
@@ -170,17 +172,20 @@
 			</script>
 		</section>
 
-		<section id="page4">
+		<section id="gallery">
 			<h1>Gallery</h1>
 			<div class="imgboard">
-				<div class="image"></div>
-				<div class="image"></div>
-				<div class="image"></div>
-				<div class="image"></div>				
+				<img src="img/example.jpg" class="image">
+				<img src="img/example.jpg" class="image">
+				<img src="img/example.jpg" class="image">
+				<img src="img/example.jpg" class="image">
+				<img src="img/example.jpg" class="image">
+				<img src="img/example.jpg" class="image">
+								
 			</div>
 		</section>
 
-		<section id="page5">
+		<section id="team">
 			<h1>Team</h1>
 			<div class="teamboard">
 				<div class="vt-card profile">
@@ -211,8 +216,47 @@
 				
 			</div>
 		</section>
+		<section id="contact">
+			<h1>CONTACTS</h1>
+		<div id="contact-card">
+			<div id="contact-info">
+				<h1>Contact us</h1>
+				<strong>We are always here for you</strong>
+				<li>Durgesh Pandey</li>
+				<li>#########</li>
+				<li>Durganshu Mishra</li>
+				<li>#########</li>
+			</div>			
+			<div id="contact-icons">
+				<div id="icon-box">
+					<div class="icons">
+						<img src="img/member.png">
+						<button class="btn download-btn">Membership Form</button>
+					</div>
+					<div class="icons">
+						<img src="img/report.png">
+						<button class="btn download-btn">Members</button>
+					</div>
+					<div class="icons">
+						<img src="img/law.png">
+						<button class="btn download-btn">Constitution</button>
+					</div>
+				</div>	
+			</div>
+		</div>	
+	</section>
+	<footer>
+		
+	</footer>
 					
 	</main>
+		
 	
 </body>
+<script type="text/javascript">
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
+
 </html>
